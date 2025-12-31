@@ -1,0 +1,33 @@
+body {
+    background-color: #000000;
+    color: #ff0000;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    width: 100%;
+}
+
+h2 {
+    font-size: clamp(1.2rem, 5vw, 2rem);
+    margin-bottom: 20px;
+    letter-spacing: 8px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.timer-display {
+    /* 画面幅いっぱいに広がるダイナミックなサイズ */
+    font-size: clamp(1.8rem, 12vw, 8rem);
+    font-weight: bold;
+    font-variant-numeric: tabular-nums; /* 数字の幅を固定してガタつきを防止 */
+    text-shadow: 0 0 20px rgba(255, 0, 0, 0.8);
+    letter-spacing: 4px;
+}
